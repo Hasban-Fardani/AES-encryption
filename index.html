@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A simple Javascript AES Encrypt and Decrypt </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+		integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous" defer></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<h3>Simple AES encrypt and decrypt</h3>
+			<label for="text">Text: </label>
+			<br>
+			<input type="text" name="text" id="text" size="32" autocomplete="off">
+			<br>
+			<label for="password">Password</label>
+			<br>
+			<input type="password" name="password" id="password" size="32">
+			<br>
+			<button onclick="encrypt()">Encrypt</button>
+			<button onclick="decrypt()">Decrypt</button>
+		</div> <!-- end div.card -->
+		<div class="output">
+			<p id="encrypted"></p>
+			<p id="decrypted"></p>
+		</div>
+	</div> <!-- end div.container -->
+</body>
+
+</html>
